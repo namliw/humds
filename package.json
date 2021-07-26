@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-a11y": "^6.3.5",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -23,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=c3b936b97c6f"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +61,7 @@
     "@storybook/addon-links": "^6.3.5",
     "@storybook/node-logger": "^6.3.5",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.5"
+    "@storybook/react": "^6.3.5",
+    "chromatic": "^5.10.0-canary.0"
   }
 }
