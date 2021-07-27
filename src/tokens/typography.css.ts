@@ -18,20 +18,32 @@ const fontFamily = {
 
 const fontWeight = {
   light: '300',
-  regular: '500',
+  regular: '400',
   bold: '600',
 }
 
 const fontSize = {
-  button: '0.8rem'
+  button: '0.8rem',
+  pageTitle: (50/16)+'rem',
+  sectionTitle: (26/16)+'rem',
+  contentTile: (26/16)+'rem',
+  content: (16/16)+'rem',
 }
 
 const lineHeight = {
-  button: '1.5'
+  button: '1.5',
+  pageTitle: '1.2',
+  sectionTitle: '1.2',
+  contentTile: '1.2',
+  content: '1',
 }
 
 const font = {
-  button: `${fontWeight.bold} ${fontSize.button}/${lineHeight.button} ${fontFamily.secondary}`
+  button: `${fontWeight.bold} ${fontSize.button}/${lineHeight.button} ${fontFamily.secondary}`,
+  pageTitle: `${fontWeight.regular} ${fontSize.pageTitle}/${lineHeight.pageTitle} ${fontFamily.main}`,
+  sectionTitle: `${fontWeight.regular} ${fontSize.sectionTitle}/${lineHeight.sectionTitle} ${fontFamily.secondary}`,
+  contentTile: `${fontWeight.regular} ${fontSize.contentTile}/${lineHeight.contentTile} ${fontFamily.secondary}`,
+  content: `${fontWeight.light} ${fontSize.content}/${lineHeight.content} ${fontFamily.secondary}`,
 }
 
 const letterSpacing = {
