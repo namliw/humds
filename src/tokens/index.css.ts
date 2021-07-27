@@ -7,4 +7,4 @@ export const tokens = createGlobalTheme(':root', {
   colour,
   ...typography,
   spacing,
-})
+});

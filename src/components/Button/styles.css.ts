@@ -16,4 +16,4 @@ export const button = style({
     borderColor: tokens.colour.poliwill,
     transition: 'background-color .3s ease-in-out,color .3s ease-in-out,border-color .3s ease-in-out',
   },
-})
+});

@@ -3,11 +3,11 @@ const brand = {
   poliwill: '#2c325a',
   pikachu: '#dbb13c',
   bulbasaur: '#56bda3',
-}
+};
 
 const monochrome = {
   black: '#000000',
   white: '#ffffff',
-}
+};
 
-export const colour = { ...brand, ...monochrome }
+export const colour = { ...brand, ...monochrome };
