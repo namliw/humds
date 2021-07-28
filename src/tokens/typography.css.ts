@@ -23,27 +23,36 @@ const fontWeight = {
 };
 
 const fontSize = {
+  publicationDate: '0.8rem',
   button: '0.8rem',
-  pageTitle: `${50 / 16}rem`,
-  sectionTitle: `${26 / 16}rem`,
-  contentTile: `${26 / 16}rem`,
-  content: `${16 / 16}rem`,
+  pictocardTitle: '1.1rem',
+  pageTitle: '3rem',
+  sectionTitle: '1.75rem',
+  contentTitle: '1.75rem',
+  content: '1rem',
+  tag: '0.7rem',
 };
 
 const lineHeight = {
+  publicationDate: '1.5',
   button: '1.5',
+  tag: '1.5',
+  pictocardTitle: '1.2',
   pageTitle: '1.2',
   sectionTitle: '1.2',
-  contentTile: '1.2',
+  contentTitle: '1.2',
   content: '1',
 };
 
 const font = {
   button: `${fontWeight.bold} ${fontSize.button}/${lineHeight.button} ${fontFamily.secondary}`,
+  pictocardTitle: `${fontWeight.regular} ${fontSize.pictocardTitle}/${lineHeight.pictocardTitle} ${fontFamily.secondary}`,
   pageTitle: `${fontWeight.regular} ${fontSize.pageTitle}/${lineHeight.pageTitle} ${fontFamily.main}`,
   sectionTitle: `${fontWeight.regular} ${fontSize.sectionTitle}/${lineHeight.sectionTitle} ${fontFamily.secondary}`,
-  contentTile: `${fontWeight.regular} ${fontSize.contentTile}/${lineHeight.contentTile} ${fontFamily.secondary}`,
+  contentTitle: `${fontWeight.regular} ${fontSize.contentTitle}/${lineHeight.contentTitle} ${fontFamily.secondary}`,
   content: `${fontWeight.light} ${fontSize.content}/${lineHeight.content} ${fontFamily.secondary}`,
+  publicationDate: `${fontWeight.light} ${fontSize.publicationDate}/${lineHeight.publicationDate} ${fontFamily.secondary}`,
+  tag: `${fontWeight.light} ${fontSize.tag}/${lineHeight.tag} ${fontFamily.secondary}`,
 };
 
 const letterSpacing = {

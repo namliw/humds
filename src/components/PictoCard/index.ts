@@ -1,1 +1,1 @@
-export * from './PictoCard';
+export * from './BasePictoCard';

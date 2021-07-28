@@ -3,6 +3,7 @@ const brand = {
   poliwill: '#2c325a',
   pikachu: '#dbb13c',
   bulbasaur: '#56bda3',
+  geodude: '#F3F3F3',
 };
 
 const monochrome = {
