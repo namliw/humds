@@ -5,7 +5,7 @@ import Img2048x738 from '../../../assets/img/img-2048x738.jpg';
 import { BasePictoCard } from '.';
 
 export default {
-  title: 'Molecules/PictoCard',
+  title: 'Molecules/PictoCard/BasePictoCard',
   component: BasePictoCard,
   parameters: {
     docs: {

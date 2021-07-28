@@ -11,9 +11,9 @@ export type ArticlePictoCardProps = Omit<BasePictoCardProps, 'children'> & {
 };
 
 export const ArticlePictoCard: React.VFC<ArticlePictoCardProps> = ({
-  articleTitle, className, imgAttributes, category, publicationDate, categoryLink,
+  articleTitle, category, publicationDate, categoryLink, ...basePictoCardProps
 }) => (
-  <BasePictoCard className={className} imgAttributes={imgAttributes}>
+  <BasePictoCard {...basePictoCardProps}>
     <div className={styles.contents}>
       <Tag label={category} href={categoryLink} />
       {articleTitle}

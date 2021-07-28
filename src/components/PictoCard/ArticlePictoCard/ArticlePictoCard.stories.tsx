@@ -4,7 +4,7 @@ import Img580x387 from '../../../assets/img/img-580x387.jpg';
 import { ArticlePictoCard } from '.';
 
 export default {
-  title: 'Molecules/ArticlePictoCard',
+  title: 'Molecules/PictoCard/ArticlePictoCard',
   component: ArticlePictoCard,
 } as ComponentMeta<typeof ArticlePictoCard>;
 
