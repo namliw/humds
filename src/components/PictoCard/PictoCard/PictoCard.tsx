@@ -1,5 +1,5 @@
 import React from 'react';
-import {BasePictoCardProps, BasePictoCard} from '../BasePictoCard';
+import { BasePictoCardProps, BasePictoCard } from '../BasePictoCard';
 import * as styles from './styles.css';
 
 export type PictoCardProps = Omit<BasePictoCardProps, 'children'> & {
@@ -7,11 +7,11 @@ export type PictoCardProps = Omit<BasePictoCardProps, 'children'> & {
 };
 
 export const PictoCard: React.VFC<PictoCardProps> = ({
-    cardTitle, ...props
+  cardTitle, ...props
 }) => (
-  <BasePictoCard {...props} >
+  <BasePictoCard {...props}>
     <div className={styles.contents}>
-        {cardTitle}
+      {cardTitle}
     </div>
   </BasePictoCard>
 );

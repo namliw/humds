@@ -5,6 +5,7 @@ const space = {
   space16: '1rem',
   space24: '1.5rem',
   space32: '2rem',
+  space40: '2.5rem',
 };
 
 export const spacing = { ...space };

@@ -53,10 +53,12 @@ const font = {
   content: `${fontWeight.light} ${fontSize.content}/${lineHeight.content} ${fontFamily.secondary}`,
   publicationDate: `${fontWeight.light} ${fontSize.publicationDate}/${lineHeight.publicationDate} ${fontFamily.secondary}`,
   tag: `${fontWeight.light} ${fontSize.tag}/${lineHeight.tag} ${fontFamily.secondary}`,
+  navItem: `${fontWeight.regular} ${fontSize.button}/${lineHeight.button} ${fontFamily.secondary}`,
 };
 
 const letterSpacing = {
   button: '0.075em',
+  navItem: '0.05em',
 };
 
 export const typography = {

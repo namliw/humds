@@ -11,7 +11,7 @@ export default {
 
 const Template: ComponentStory<typeof PictoCardGroup> = (args) => <PictoCardGroup {...args} />;
 
-const ExamplePictoCard = () => <BasePictoCard imgAttributes={{ src: Img580x387,alt: 'Img' }}>Title goes here</BasePictoCard>;
+const ExamplePictoCard = () => <BasePictoCard imgAttributes={{ src: Img580x387, alt: 'Img' }}>Title goes here</BasePictoCard>;
 
 export const Explorer = Template.bind({});
 Explorer.args = {
@@ -22,5 +22,5 @@ Explorer.args = {
     <ExamplePictoCard />
     <ExamplePictoCard />
     <ExamplePictoCard />
-  </>
+  </>,
 };

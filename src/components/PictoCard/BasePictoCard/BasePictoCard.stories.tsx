@@ -43,7 +43,7 @@ LongImageBasePictoCard.args = {
   imgAttributes: {
     src: Img2048x738,
     alt: 'Img2048x738',
-    style: { height: '100%', left: '-40%' },
+    style: { width: 'unset', height: '100%', left: '-43%' },
   },
   children: 'Image 2048x738',
 };

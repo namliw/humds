@@ -18,8 +18,7 @@ export const img = style({
   bottom: 0,
   left: 0,
   right: 0,
-  minWidth: '100%',
-  minHeight: '100%',
+  width: '100%',
 });
 
 export const contents = style({
