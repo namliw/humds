@@ -2,6 +2,7 @@ import path from 'path';
 import { Configuration } from 'webpack';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import { VanillaExtractPlugin } from '@vanilla-extract/webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const config: Configuration = {
   entry: './src/index.tsx',
@@ -16,6 +17,10 @@ const config: Configuration = {
       {
         test: /\.html$/,
         use: 'html-loader',
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.tsx?$/,
