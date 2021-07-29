@@ -8,11 +8,11 @@ export const pictoCardGroup = style({
   rowGap: tokens.spacing.space40,
   columnGap: tokens.spacing.space40,
   '@media': {
-    [mediaQuery.desktop]: {
+    [mediaQuery.large]: {
       gridTemplateColumns: 'repeat(3, 1fr)',
     },
     // @todo Enable this once multiple media queries works
-    // [mediaQuery.tablet]: {
+    // [mediaQuery.medium]: {
     //   gridTemplateColumns: 'repeat(2, 1fr)',
     // },
   },

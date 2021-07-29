@@ -1,12 +1,12 @@
-const breakpointTablet = '768px';
-const breakpointMobile = '576px';
+const breakpointMd = '768px';
+const breakpointSm = '576px';
 
-const desktop = `screen and (min-width: calc(${breakpointTablet} + 1px))`;
-const tablet = `screen and (min-width: calc(${breakpointMobile} + 1px)) and (max-width: ${breakpointTablet})`;
-const mobile = `screen and (max-width: ${breakpointMobile})`;
+const large = `screen and (min-width: calc(${breakpointMd} + 1px))`;
+const medium = `screen and (min-width: calc(${breakpointSm} + 1px)) and (max-width: ${breakpointMd})`;
+const small = `screen and (max-width: ${breakpointSm})`;
 
 export const mediaQuery = {
-  desktop,
-  tablet,
-  mobile,
+  large,
+  medium,
+  small,
 };
