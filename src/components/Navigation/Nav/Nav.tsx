@@ -14,9 +14,9 @@ export const Nav: React.VFC<NavProps> = ({
   ...props
 }) => (
   <nav className={joinClassNames(styles.nav, className)} {...props}>
-    <ul>
+    <ul className={styles.itemContainer}>
       {React.Children.map(children, (child) => (
-        <li>{child}</li>
+        <li className={styles.childItem}>{child}</li>
       ))}
     </ul>
   </nav>

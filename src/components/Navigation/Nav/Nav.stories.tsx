@@ -8,8 +8,8 @@ export default {
   component: Nav,
 } as ComponentMeta<typeof Nav>;
 
-const Template: ComponentStory<typeof Nav> = (args) => (
-  <Nav {...args}>
+export const Explorer: ComponentStory<typeof Nav> = () => (
+  <Nav>
     <NavItem text="child 1" />
     <NavItem text="child 2" />
     <NavItem text="child 3" />
@@ -17,6 +17,11 @@ const Template: ComponentStory<typeof Nav> = (args) => (
   </Nav>
 );
 
-export const Explorer = Template.bind({});
-Explorer.args = {
-};
+export const ActiveItem: ComponentStory<typeof Nav> = () => (
+  <Nav>
+    <NavItem text="child 1" />
+    <NavItem text="child 2" isActive />
+    <NavItem text="child 3" />
+    <NavItem text="child 4" />
+  </Nav>
+);
