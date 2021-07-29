@@ -10,18 +10,18 @@ export default {
 
 export const Explorer: ComponentStory<typeof Nav> = () => (
   <Nav>
-    <NavItem text="child 1" />
-    <NavItem text="child 2" />
-    <NavItem text="child 3" />
-    <NavItem text="child 4" />
+    <NavItem text="child 1" href="" />
+    <NavItem text="child 2" href="" />
+    <NavItem text="child 3" href="" />
+    <NavItem text="child 4" href="" />
   </Nav>
 );
 
 export const ActiveItem: ComponentStory<typeof Nav> = () => (
   <Nav>
-    <NavItem text="child 1" />
-    <NavItem text="child 2" isActive />
-    <NavItem text="child 3" />
-    <NavItem text="child 4" />
+    <NavItem text="child 1" href="" />
+    <NavItem text="child 2" href="" isActive />
+    <NavItem text="child 3" href="" />
+    <NavItem text="child 4" href="" />
   </Nav>
 );

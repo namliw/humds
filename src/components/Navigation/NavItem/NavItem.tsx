@@ -11,10 +11,11 @@ export const NavItem: React.VFC<NavItemProps> = ({
   text, isActive = false, className, ...props
 }) => (
   <a
-    className={
-    joinClassNames(className, styles.navItem,
-      isActive && styles.navItemActive)
-}
+    className={joinClassNames(
+      className,
+      styles.navItem,
+      isActive && styles.navItemActive,
+    )}
     {...props}
   >
     {text}

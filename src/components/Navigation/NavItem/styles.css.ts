@@ -1,34 +1,35 @@
 import { style } from '@vanilla-extract/css';
 import { tokens } from '../../../tokens/index.css';
 
-const UNDERLINE_OVERFLOW = '2px';
+const HIGHLIGHT_OVERFLOW = '2px';
 
 export const navItem = style({
-  color: tokens.colour.squirtle,
+  position: 'relative',
   font: tokens.font.navItem,
+  color: tokens.colour.squirtle,
   textTransform: 'uppercase',
   textDecoration: 'none',
   letterSpacing: tokens.letterSpacing.navItem,
-  position: 'relative',
+  zIndex: 0,
   ':hover': {
     color: tokens.colour.poliwill,
   },
   '::after': {
     content: "''",
-    width: `calc(100% + (${UNDERLINE_OVERFLOW} * 2))`,
-    display: 'block',
     position: 'absolute',
-    bottom: 0,
+    display: 'block',
+    width: `calc(100% + (${HIGHLIGHT_OVERFLOW} * 2))`,
     top: '100%',
+    bottom: 0,
+    left: `-${HIGHLIGHT_OVERFLOW}`,
     zIndex: -1,
-    left: `calc(${UNDERLINE_OVERFLOW} * -1)`,
   },
   selectors: {
     '&:hover:after': {
       backgroundColor: tokens.colour.bulbasaur,
       transition: 'top .3s ease-in-out',
       top: '50%',
-      bottom: `calc(${UNDERLINE_OVERFLOW} * -1)`,
+      bottom: `-${HIGHLIGHT_OVERFLOW}`,
     },
   },
 });
@@ -38,7 +39,7 @@ export const navItemActive = style({
   '::after': {
     backgroundColor: tokens.colour.pikachu,
     top: '50%',
-    bottom: `calc(${UNDERLINE_OVERFLOW} * -1)`,
+    bottom: `-${HIGHLIGHT_OVERFLOW}`,
   },
   selectors: {
     '&:hover:after': {
