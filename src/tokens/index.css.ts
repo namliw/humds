@@ -5,7 +5,8 @@ import { typography } from './typography.css';
 
 export * from './media-queries.css';
 
-export const tokens = createGlobalTheme(':root', {
+// CSS variables
+export const vars = createGlobalTheme(':root', {
   colour,
   spacing,
   ...typography,

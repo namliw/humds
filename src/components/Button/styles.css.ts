@@ -1,19 +1,19 @@
 import { style } from '@vanilla-extract/css';
-import { tokens } from '../../tokens/index.css';
+import { vars } from '../../tokens/index.css';
 
 export const button = style({
-  border: `1px solid ${tokens.colour.pikachu}`,
-  backgroundColor: tokens.colour.pikachu,
-  padding: `${tokens.spacing.space16} ${tokens.spacing.space32}`,
-  font: tokens.font.button,
-  letterSpacing: tokens.letterSpacing.button,
+  border: `1px solid ${vars.colour.pikachu}`,
+  backgroundColor: vars.colour.pikachu,
+  padding: `${vars.spacing.space16} ${vars.spacing.space32}`,
+  font: vars.font.button,
+  letterSpacing: vars.letterSpacing.button,
   textTransform: 'uppercase',
-  color: tokens.colour.poliwill,
+  color: vars.colour.poliwill,
   cursor: 'pointer',
   transition: 'background-color .3s ease-in-out,color .3s ease-in-out,border-color .3s ease-in-out',
   ':hover': {
-    backgroundColor: tokens.colour.white,
-    borderColor: tokens.colour.poliwill,
+    backgroundColor: vars.colour.white,
+    borderColor: vars.colour.poliwill,
     transition: 'background-color .3s ease-in-out,color .3s ease-in-out,border-color .3s ease-in-out',
   },
 });

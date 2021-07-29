@@ -1,18 +1,18 @@
 import { style } from '@vanilla-extract/css';
-import { tokens } from '../../../tokens/index.css';
+import { vars } from '../../../tokens/index.css';
 
 const HIGHLIGHT_OVERFLOW = '2px';
 
 export const navItem = style({
   position: 'relative',
-  font: tokens.font.navItem,
-  color: tokens.colour.squirtle,
+  font: vars.font.navItem,
+  color: vars.colour.squirtle,
   textTransform: 'uppercase',
   textDecoration: 'none',
-  letterSpacing: tokens.letterSpacing.navItem,
+  letterSpacing: vars.letterSpacing.navItem,
   zIndex: 0,
   ':hover': {
-    color: tokens.colour.poliwill,
+    color: vars.colour.poliwill,
   },
   '::after': {
     content: "''",
@@ -26,7 +26,7 @@ export const navItem = style({
   },
   selectors: {
     '&:hover:after': {
-      backgroundColor: tokens.colour.bulbasaur,
+      backgroundColor: vars.colour.bulbasaur,
       transition: 'top .3s ease-in-out',
       top: '50%',
       bottom: `-${HIGHLIGHT_OVERFLOW}`,
@@ -35,15 +35,15 @@ export const navItem = style({
 });
 
 export const navItemActive = style({
-  color: tokens.colour.poliwill,
+  color: vars.colour.poliwill,
   '::after': {
-    backgroundColor: tokens.colour.pikachu,
+    backgroundColor: vars.colour.pikachu,
     top: '50%',
     bottom: `-${HIGHLIGHT_OVERFLOW}`,
   },
   selectors: {
     '&:hover:after': {
-      backgroundColor: tokens.colour.pikachu,
+      backgroundColor: vars.colour.pikachu,
     },
   },
 });

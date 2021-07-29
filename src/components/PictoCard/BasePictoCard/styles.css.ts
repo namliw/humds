@@ -1,9 +1,9 @@
 import { style } from '@vanilla-extract/css';
-import { tokens } from '../../../tokens/index.css';
+import { vars } from '../../../tokens/index.css';
 
 export const pictocard = style({
   position: 'relative',
-  backgroundColor: tokens.colour.geodude,
+  backgroundColor: vars.colour.geodude,
 });
 
 export const imgContainer = style({
@@ -22,8 +22,8 @@ export const img = style({
 });
 
 export const contents = style({
-  padding: tokens.spacing.space24,
-  font: tokens.font.pictocardTitle,
-  color: tokens.colour.poliwill,
+  padding: vars.spacing.space24,
+  font: vars.font.pictocardTitle,
+  color: vars.colour.poliwill,
   textTransform: 'uppercase',
 });

@@ -1,12 +1,12 @@
 import { style } from '@vanilla-extract/css';
-import { tokens, mediaQuery } from '../../../tokens/index.css';
+import { vars, mediaQuery } from '../../../tokens/index.css';
 
 export const pictoCardGroup = style({
   display: 'grid',
   gridTemplateRows: 'auto',
   gridTemplateColumns: '1fr', // Mobile
-  rowGap: tokens.spacing.space40,
-  columnGap: tokens.spacing.space40,
+  rowGap: vars.spacing.space40,
+  columnGap: vars.spacing.space40,
   '@media': {
     [mediaQuery.large]: {
       gridTemplateColumns: 'repeat(3, 1fr)',
