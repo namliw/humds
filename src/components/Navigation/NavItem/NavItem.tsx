@@ -4,12 +4,21 @@ import * as styles from './styles.css';
 
 export type NavItemProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   text: string;
+  isActive?: boolean;
 };
 
 export const NavItem: React.VFC<NavItemProps> = ({
-  text, className, ...props
+  text, isActive = false, className, ...props
 }) => (
-  <a className={joinClassNames(className, styles.navItem)} {...props}>
+  <a
+    className={
+    joinClassNames(className, styles.navItem,
+      isActive && styles.navItemActive)
+}
+    {...props}
+  >
     {text}
   </a>
 );
+
+NavItem.displayName = 'NavItem';

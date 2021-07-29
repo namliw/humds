@@ -1,4 +1,4 @@
-const space = {
+export const space = {
   space4: '0.25rem',
   space8: '0.5rem',
   space12: '0.75rem',

@@ -10,8 +10,21 @@ export default {
 
 const Template: ComponentStory<typeof NavItem> = (args) => <NavItem {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Explorer = Template.bind({});
+Explorer.args = {
   text: 'NavItem text',
   href: '',
+};
+
+export const Default = Template.bind({});
+Default.args = {
+  text: 'NavItem text',
+  href: '',
+};
+
+export const Active = Template.bind({});
+Active.args = {
+  text: 'NavItem text',
+  href: '',
+  isActive: true,
 };
