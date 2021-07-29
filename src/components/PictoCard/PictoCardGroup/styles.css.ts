@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { vars, mediaQuery } from '../../../tokens/index.css';
+import { vars, tokens } from '../../../tokens/index.css';
 
 export const pictoCardGroup = style({
   display: 'grid',
@@ -8,11 +8,11 @@ export const pictoCardGroup = style({
   rowGap: vars.spacing.space40,
   columnGap: vars.spacing.space40,
   '@media': {
-    [mediaQuery.large]: {
+    [tokens.mediaQuery.large]: {
       gridTemplateColumns: 'repeat(3, 1fr)',
     },
     // @todo Enable this once multiple media queries works
-    // [mediaQuery.medium]: {
+    // [tokens.mediaQuery.medium]: {
     //   gridTemplateColumns: 'repeat(2, 1fr)',
     // },
   },
