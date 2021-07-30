@@ -52,7 +52,7 @@ resource "aws_s3_bucket" "b" {
 
 module "template_files" {
   source   = "hashicorp/dir/template"
-  base_dir = abspath("../storybookDist")
+  base_dir = "../storybookDist"
 }
 
 resource "aws_s3_bucket_object" "static_files" {
