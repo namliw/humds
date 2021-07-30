@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { tokens } from './index.css';
+import { vars } from './index.css';
 
 export default {
   title: 'Tokens/Typography',
@@ -8,9 +8,9 @@ export default {
 
 export const Typography = () => (
   <div style={{ display: 'flex', flexDirection: 'column' }}>
-    <span style={{ font: tokens.font.pageTitle }}>Page Title</span>
-    <span style={{ font: tokens.font.sectionTitle }}>Section Title</span>
-    <span style={{ font: tokens.font.contentTitle }}>Content Title</span>
-    <span style={{ font: tokens.font.content }}>Content</span>
+    <span style={{ font: vars.font.pageTitle }}>Page Title</span>
+    <span style={{ font: vars.font.sectionTitle }}>Section Title</span>
+    <span style={{ font: vars.font.contentTitle }}>Content Title</span>
+    <span style={{ font: vars.font.content }}>Content</span>
   </div>
 );
