@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { vars } from '../../../tokens/index.css';
+import { tokens, vars } from '../../../tokens/index.css';
 
 const HIGHLIGHT_OVERFLOW = '2px';
 

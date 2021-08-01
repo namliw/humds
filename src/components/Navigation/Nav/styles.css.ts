@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { vars } from '../../../tokens/index.css';
+import { tokens, vars } from '../../../tokens/index.css';
 
 export const nav = style({
   display: 'flex',
@@ -8,16 +8,25 @@ export const nav = style({
 export const itemContainer = style({
   listStyle: 'none',
   display: 'flex',
-  flexDirection: 'row',
+  flexDirection: 'column',
   padding: '0',
   margin: '0',
+  '@media': {
+    [tokens.mediaQuery.large]: {
+      flexDirection: 'row',
+    }
+  }
 });
 
 export const childItem = style({
-  marginLeft: vars.spacing.space32,
-  selectors: {
-    '&:first-child': {
-      marginLeft: '0',
+  '@media': {
+    [tokens.mediaQuery.large]: {
+      marginLeft: vars.spacing.space32,
+      selectors: {
+        '&:first-child': {
+          marginLeft: '0',
+        },
+      },
     },
-  },
+  }
 });
