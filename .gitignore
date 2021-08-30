@@ -135,4 +135,4 @@ yarn-error.log*
 /terraform/terraform.tfvars
 
 # storybook
-# /storybookDist
+/storybookDist
